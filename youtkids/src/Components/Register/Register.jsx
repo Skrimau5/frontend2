@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function CreateUser() {
+function Register() {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -77,4 +77,4 @@ function CreateUser() {
   );
 }
 
-export default CreateUser;
+export default Register;
