@@ -1,0 +1,63 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Color de fondo */
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 400px; /* Ancho máximo del contenedor del formulario */
+    padding: 40px;
+    background-color: #fff; /* Color de fondo del contenedor del formulario */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Color del texto */
+    text-align: center;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px; /* Espaciado interno */
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Borde */
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transiciones suaves */
+  }
+  
+  .input:focus {
+    outline: none; /* Eliminar borde al enfocar */
+    border-color: #007bff; /* Color del borde al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra al enfocar */
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out; /* Transición suave */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  

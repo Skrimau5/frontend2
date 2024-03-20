@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
-// import './Kids.css';
+import { Link } from 'react-router-dom';
+import './Childs.css';
 
 const Kids = () => {
   const [children, setChildren] = useState([]);
   const [selectedChildId, setSelectedChildId] = useState(null);
   const [pin, setPin] = useState('');
   const [isOpen, setIsOpen] = useState(false);
-  const[logIn, setLogIn]= useState(false);
+  const [logIn, setLogIn] = useState(false);
 
   const fetchChildren = async () => {
     try {
@@ -43,7 +44,7 @@ const Kids = () => {
       }
       const data = await response.json();
       console.log('Child logged in successfully:', data);
-      setIsOpen(false); 
+      setIsOpen(false);
       setPin("");
       setLogIn(true);
     } catch (error) {
@@ -52,7 +53,7 @@ const Kids = () => {
   };
 
   if (logIn) {
-    return <Navigate to="/watch" />;
+    return <Navigate to="/view" />;
   }
 
   return (
@@ -88,6 +89,10 @@ const Kids = () => {
           </div>
         </div>
       )}
+      {/* Volver a la pagina anterior */}
+      <Link to="/login">
+        <button className='return-button'>Volver</button>
+      </Link>
     </div>
   );
 };

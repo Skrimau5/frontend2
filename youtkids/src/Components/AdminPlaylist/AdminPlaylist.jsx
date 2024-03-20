@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
-// import './AdminPlaylist.css'
+import './AdminPlaylist.css'
 
 const AdminPlaylist = () => {
   const [videos, setVideos] = useState([]);
@@ -24,7 +24,7 @@ const AdminPlaylist = () => {
 
   const handleEdit = (video) => {
     localStorage.setItem('videoToEdit', JSON.stringify(video));
-    window.location.href = '/editVideo'; 
+    window.location.href = '/editVideo';
   };
 
   const fetchData = async () => {
@@ -47,28 +47,32 @@ const AdminPlaylist = () => {
 
   return (
     <div className="playlist-container">
-    <h2 className="playlist-title">Playlist</h2>
-    <Link to="/createVideo" className="playlist-button">Create new video</Link>
-    {error && <div className="error-message">{error}</div>}
-    <ul className="playlist-list">
-      {videos.map(video => (
-        <li key={video._id} className="playlist-item">
-          <p className="video-name">Name: {video.name}</p>
-          <div className="video-player">
-            <ReactPlayer
-              url={video.url}
-              loop
-              controls
-            />
-          </div>
-          <div className="video-controls">
-            <button className="video-delete" onClick={() => handleDelete(video._id)}>Delete</button>
-            <button className="video-edit" onClick={() => handleEdit(video)}>Edit</button>
-          </div>
-        </li>
-      ))}
-    </ul>
-  </div>
+      <h2 className="playlist-title">Playlist</h2>
+      <Link to="/createVideo" className="playlist-button">Create new video</Link>
+      {error && <div className="error-message">{error}</div>}
+      <ul className="playlist-list">
+        {videos.map(video => (
+          <li key={video._id} className="playlist-item">
+            <p className="video-name">Name: {video.name}</p>
+            <div className="video-player">
+              <ReactPlayer
+                url={video.url}
+                loop
+                controls
+              />
+            </div>
+            <div className="video-controls">
+              <button className="video-delete" onClick={() => handleDelete(video._id)}>Delete</button>
+              <button className="video-edit" onClick={() => handleEdit(video)}>Edit</button>
+            </div>
+          </li>
+        ))}
+      </ul>
+      {/* Volver a la pagina anterior */}
+      <Link to="/home">
+        <button className='return-button'>Volver</button>
+      </Link>
+    </div>
   );
 };
 

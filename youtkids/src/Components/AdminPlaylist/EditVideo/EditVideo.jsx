@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './EditVideo.css'
 
 const EditVideo = () => {
   const [formData, setFormData] = useState({
@@ -67,6 +69,10 @@ const EditVideo = () => {
         <input className="edit-video-input" type="url" name="url" placeholder="URL" value={formData.url} onChange={handleChange} required />
         <button className="edit-video-button" type="submit">Update Video</button>
       </form>
+            {/* Volver a la pagina anterior */}
+            <Link to="/adminPlayList">
+        <button className='return-button'>Volver</button>
+      </Link>
       </div>
     </>
 

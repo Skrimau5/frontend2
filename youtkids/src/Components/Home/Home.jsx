@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
-// import './Home.css';
 import Childs from './Childs';
 
 const Home = () => {

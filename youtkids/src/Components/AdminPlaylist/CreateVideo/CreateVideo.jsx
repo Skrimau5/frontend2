@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
+import './CreateVideo.css';
+import { Link } from 'react-router-dom';
 
 const CreateVideo = () => {
   const [formData, setFormData] = useState({
@@ -64,8 +66,12 @@ const CreateVideo = () => {
         <input className="create-video-input" type="text" name="url" placeholder="URL" value={formData.url} onChange={handleChange} required />
         <button className="create-video-button" type="submit">Create Playlist</button>
       </form>
-    </div>
 
+      {/* Volver a la pagina anterior */}
+      <Link to="/adminPlayList">
+        <button className='return-button'>Volver</button>
+      </Link>
+    </div>
 
   )
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Register from '../Register/Register';
+import './Login.css';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ const Login = () => {
   }
 
   return (
-    <div className="container"> 
+    <div className="login-container">
       <div className="form-container"> 
         <h2>Login</h2>
         {error && <div className="error-message">{error}</div>}

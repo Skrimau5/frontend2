@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom'
-import Register from './Components/Register/Register'
 import Login from './Components/Login/Login'
 import AdminPlaylist from './Components/AdminPlaylist/AdminPlaylist'
 import AdminProfile from './Components/AdminProfile/AdminProfile'
@@ -16,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Register/> } />
-          <Route path="/View" element={<View/>}/>
+        <Route path="/" element={<Login/> } />
+          <Route path="/view" element={<View/>}/>
           <Route path="/adminPlayList" element={<AdminPlaylist/>}/>
           <Route path="/adminProfile" element={<AdminProfile/>}/>
           <Route path="/login" element={<Login/>}/>

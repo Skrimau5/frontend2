@@ -41,7 +41,8 @@ function Register() {
       const data = await response.json();
       console.log('User registered successfully:', data);
       setError('');
- 
+      localStorage.setItem("Name", data.name);
+      localStorage.setItem("Id", data._id);
       setFormData({
         email: '',
         password: '',
