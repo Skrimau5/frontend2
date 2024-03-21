@@ -54,13 +54,13 @@ const Home = () => {
   return (
     <div >
       <div className="admin-buttons">
-        <button onClick={() => openModal('Enter your pin', true)}>Administration Kids</button>
-        <button onClick={() => openModal('Enter your pin', false)}>Administration Playlist</button>
+        <button onClick={() => openModal('Ingrese su Pin', true)}>Administracion Niños</button>
+        <button onClick={() => openModal('Ingrese su Pin', false)}>Administracion Playlist</button>
       </div>
       {showModal && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={closeModal}>Cerrar modal</button>
+            <button className="close-button" onClick={closeModal}>Cancelar</button>
             <h2>{modalContent}</h2>
             <input
               type="text"

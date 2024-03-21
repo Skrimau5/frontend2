@@ -62,7 +62,7 @@ function Register() {
 
   return (
     <div>
-      <h2>Create User</h2>
+      <h2>Crear Usuario</h2>
       {error && <div style={{ color: 'red' }}>{error}</div>}
       <form onSubmit={handleSubmit}>
         <input type="email" name="email" placeholder="Email *" value={formData.email} onChange={handleChange} required />
@@ -73,7 +73,7 @@ function Register() {
         <input type="text" name="lastname" placeholder="Lastname *" value={formData.lastname} onChange={handleChange} required />
         <input type="text" name="country" placeholder="Country" value={formData.country} onChange={handleChange} />
         <input type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento *" value={formData.fechaNacimiento} onChange={handleChange} required />
-        <button type="submit">Create User</button>
+        <button type="submit">Crear Usuario</button>
       </form>
     </div>
   );

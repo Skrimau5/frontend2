@@ -62,12 +62,12 @@ const EditVideo = () => {
   return (
     <>
     <div className="centered-box">
-      <h2 className="edit-video-title">Edit Video</h2>
+      <h2 className="edit-video-title">Editar Video</h2>
       {error && <div className="error-message">{error}</div>}
       <form className="edit-video-form" onSubmit={handleSubmit}>
         <input className="edit-video-input" type="text" name="name" placeholder="Name *" value={formData.name} onChange={handleChange} required />
         <input className="edit-video-input" type="url" name="url" placeholder="URL" value={formData.url} onChange={handleChange} required />
-        <button className="edit-video-button" type="submit">Update Video</button>
+        <button className="edit-video-button" type="submit">Subir Video</button>
       </form>
             {/* Volver a la pagina anterior */}
             <Link to="/adminPlayList">

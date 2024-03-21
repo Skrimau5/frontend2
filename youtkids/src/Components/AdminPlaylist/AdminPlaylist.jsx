@@ -48,12 +48,12 @@ const AdminPlaylist = () => {
   return (
     <div className="playlist-container">
       <h2 className="playlist-title">Playlist</h2>
-      <Link to="/createVideo" className="playlist-button">Create new video</Link>
+      <Link to="/createVideo" className="playlist-button">Crear Nuevo Video</Link>
       {error && <div className="error-message">{error}</div>}
       <ul className="playlist-list">
         {videos.map(video => (
           <li key={video._id} className="playlist-item">
-            <p className="video-name">Name: {video.name}</p>
+            <p className="video-name">Nombre: {video.name}</p>
             <div className="video-player">
               <ReactPlayer
                 url={video.url}
@@ -62,8 +62,8 @@ const AdminPlaylist = () => {
               />
             </div>
             <div className="video-controls">
-              <button className="video-delete" onClick={() => handleDelete(video._id)}>Delete</button>
-              <button className="video-edit" onClick={() => handleEdit(video)}>Edit</button>
+              <button className="video-delete" onClick={() => handleDelete(video._id)}>Borrar</button>
+              <button className="video-edit" onClick={() => handleEdit(video)}>Editar</button>
             </div>
           </li>
         ))}

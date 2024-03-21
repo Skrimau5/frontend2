@@ -59,12 +59,12 @@ const CreateVideo = () => {
 
   return (
     <div className="create-video-container">
-      <h2 className="create-video-title">Create video</h2>
+      <h2 className="create-video-title">Crear Video</h2>
       {error && <div className="error-message">{error}</div>}
       <form className="create-video-form" onSubmit={handleSubmit}>
         <input className="create-video-input" type="text" name="name" placeholder="Name of video *" value={formData.name} onChange={handleChange} required />
         <input className="create-video-input" type="text" name="url" placeholder="URL" value={formData.url} onChange={handleChange} required />
-        <button className="create-video-button" type="submit">Create Playlist</button>
+        <button className="create-video-button" type="submit">Crear Playlist</button>
       </form>
 
       {/* Volver a la pagina anterior */}

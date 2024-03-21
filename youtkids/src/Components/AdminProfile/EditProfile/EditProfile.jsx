@@ -96,21 +96,21 @@ const EditProfile = () => {
 
   return (
     <>
-      <h2 className="update-title">Update profile</h2>
+      <h2 className="update-title">Actualizar Perfil</h2>
       {error && <div className="error-message">{error}</div>}
       <form className="update-form" onSubmit={handleSubmit}>
         <input className="update-input" type="text" name="name" placeholder="Name *" value={formData.name} onChange={handleChange} required />
         <input className="update-input" type="text" name="pin" placeholder="PIN *" value={formData.pin} onChange={handleChange} required />
         <input className="update-input" type="number" name="age" placeholder="Age *" value={formData.age} onChange={handleChange} required />
         {selectedAvatar && <img className="update-avatar" src={selectedAvatar} alt="Selected Avatar" />}
-        <button className="update-button" type="button" onClick={openModal}>Select Avatar</button>
-        <button className="update-button" type="submit">Update Child</button>
+        <button className="update-button" type="button" onClick={openModal}>Seleccionar Avatar</button>
+        <button className="update-button" type="submit">Actualizar Informacion</button>
       </form>
       {isOpen && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={closeModal}>Cerrar modal</button>
-            <h2>Select image for avatar</h2>
+            <button className="close-button" onClick={closeModal}>Cancelar</button>
+            <h2>Seleccione Su Avatar</h2>
             <div className="image-container">
               {imageLinks.map((imageLink, index) => (
                 <img

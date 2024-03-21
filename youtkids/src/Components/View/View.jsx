@@ -29,7 +29,7 @@ const View = () => {
       <ul>
         {videos.map(video => (
           <li key={video._id}>
-            <p>Name: {video.name}</p>
+            <p>Nombre: {video.name}</p>
             <div>
               <ReactPlayer
                 url={video.url}

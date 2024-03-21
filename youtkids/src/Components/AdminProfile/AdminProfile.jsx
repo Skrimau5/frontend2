@@ -45,9 +45,9 @@ const AdminProfile = () => {
 
   return (
     <div className="children-container">
-      <h2>Children</h2>
+      <h2>Niño</h2>
       <Link to="/createProfile">
-        <button>Create new profile</button>
+        <button>Crear Nuevo Perfil</button>
       </Link>
       <ul className="child-list">
         {children.map(child => (
@@ -58,12 +58,12 @@ const AdminProfile = () => {
               alt='avatar'
             />
             <div className="child-details">
-              <p className="child-name">Name: {child.name}</p>
-              <p className="child-age">Age: {child.age}</p>
+              <p className="child-name">Nombre: {child.name}</p>
+              <p className="child-age">Edad: {child.age}</p>
               <p className="child-pin">PIN: {child.pin}</p>
             </div>
-            <button onClick={() => handleDelete(child._id)}>Delete</button>
-            <button onClick={() => handleEdit(child)}>Edit profile</button>
+            <button onClick={() => handleDelete(child._id)}>Eliminar</button>
+            <button onClick={() => handleEdit(child)}>Editar Perfil</button>
           </li>
         ))}
       </ul>

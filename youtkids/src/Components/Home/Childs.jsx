@@ -68,8 +68,8 @@ const Kids = () => {
               onClick={() => openModal(child._id)}
             />
             <div className="child-details">
-              <p className="child-name">Name: {child.name}</p>
-              <p className="child-age">Age: {child.age}</p>
+              <p className="child-name">Nombre: {child.name}</p>
+              <p className="child-age">Edad: {child.age}</p>
             </div>
           </li>
         ))}
@@ -77,7 +77,7 @@ const Kids = () => {
       {isOpen && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-button" onClick={closeModal}>Cerrar modal</button>
+            <button className="close-button" onClick={closeModal}>Cancelar</button>
             <h2>Iniciar sesión</h2>
             <input
               type="text"
