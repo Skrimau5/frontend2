@@ -126,7 +126,7 @@ const EditProfile = () => {
         </div>
       )}
       {/* Volver a la pagina anterior */}
-      <Link to="/Home">
+      <Link to="/AdminProfile">
         <button className='return-button'>Volver</button>
       </Link>
     </>

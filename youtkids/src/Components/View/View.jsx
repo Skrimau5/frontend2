@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
+import './View.css';
 
 const View = () => {
 
