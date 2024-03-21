@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import Childs from './Childs';
+import './Home.css';
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
