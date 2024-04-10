@@ -19,7 +19,7 @@ const Login = () => {
       [name]: value
     }));
   };
-
+  //validar los datos
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -52,7 +52,7 @@ const Login = () => {
       setError('Error logging in. Please try again.');
     }
   };
-
+  //redirige el home
   if (loggedIn) {
     return <Navigate to="/home" />; 
   }

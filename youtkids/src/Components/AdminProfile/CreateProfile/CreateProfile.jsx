@@ -16,7 +16,7 @@ const CreateProfile = () => {
   const [error, setError] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [imageLinks] = useState([
-    'https://cdn-icons-png.freepik.com/256/1326/1326418.png?ga=GA1.1.74766830.1710471239&',
+    'https://cdn-icons-png.freepik.com/256/1326/1326418.png?ga=GA1.1.74766830.1710471239&', //iconos
     'https://cdn-icons-png.freepik.com/256/1326/1326412.png?ga=GA1.1.74766830.1710471239&',
     'https://cdn-icons-png.freepik.com/256/1326/1326405.png?ga=GA1.1.74766830.1710471239&',
     'https://cdn-icons-png.freepik.com/256/1675/1675908.png?ga=GA1.1.74766830.1710471239&',
@@ -76,7 +76,7 @@ const CreateProfile = () => {
       setError('Error creating child. Please try again later.');
     }
   };
-
+  //redirigir
   if (profileCreated) {
     return <Navigate to="/adminProfile" />;
   }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Register.css';
-
+//datos la cuenta
 function Register() {
   const [formData, setFormData] = useState({
     email: '',
@@ -12,7 +12,7 @@ function Register() {
     country: '',
     fechaNacimiento: ''
   });
-
+  //error de datos
   const [error, setError] = useState('');
 
   const handleChange = (e) => {
@@ -27,7 +27,7 @@ function Register() {
     e.preventDefault();
     console.log(formData);
     try {
-      const response = await fetch('http://localhost:3001/api/users', { 
+      const response = await fetch('http://localhost:3001/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -42,7 +42,7 @@ function Register() {
       const data = await response.json();
       console.log('User registered successfully:', data);
       setError('');
-      localStorage.setItem("Name", data.name);
+      localStorage.setItem("Name", data.name); //guardamos, para busqueda de videos y usuarios
       localStorage.setItem("Id", data._id);
       setFormData({
         email: '',
@@ -59,7 +59,7 @@ function Register() {
       setError('Error registering user. Please try again later.');
     }
   };
-
+  //ingresamos los datos
   return (
     <div>
       <h2>Crear Usuario</h2>

@@ -20,7 +20,7 @@ const Home = () => {
   const closeModal = () => {
     setShowModal(false);
   };
-
+  // validad Pin y ID
   const handleSubmit = async () => {
     try {
       const response = await fetch(`http://localhost:3001/api/userLogin?_id=${localStorage.getItem("Id")}&pin=${pin}`);
@@ -43,7 +43,7 @@ const Home = () => {
       console.error('Error logging in child:', error.message);
     }
   };
-
+  //redige
   if (loggedForKids) {
     return <Navigate to="/adminProfile" />;
   }

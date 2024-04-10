@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './View.css';
 
 const View = () => {
-
+//obtener todos los videos, se almacenan en un UseState
   const [videos, setVideos] = useState([]);
 
   const fetchData = async () => {
@@ -31,7 +31,7 @@ const View = () => {
           <li key={video._id}>
             <p>Nombre: {video.name}</p>
             <div>
-              <ReactPlayer
+              <ReactPlayer //Para hacer loop
                 url={video.url}
                 loop
                 controls
