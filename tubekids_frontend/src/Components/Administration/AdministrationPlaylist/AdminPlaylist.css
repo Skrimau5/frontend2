@@ -1,0 +1,77 @@
+/* Estilos mejorados para el componente AdministrationPlaylist */
+.playlist-container {
+    padding: 20px;
+}
+
+.playlist-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.playlist-button {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.playlist-button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.playlist-list {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist-item {
+    margin-bottom: 20px;
+}
+
+.video-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.video-player {
+    margin-bottom: 10px;
+}
+
+.video-controls {
+    margin-bottom: 10px;
+}
+
+.video-delete,
+.video-edit {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+}
+
+.video-edit {
+    background-color: #ffc107;
+}
+
+.video-delete:hover,
+.video-edit:hover {
+    background-color: #c82333;
+}
+
+.video-edit:hover {
+    background-color: #e0a800;
+}

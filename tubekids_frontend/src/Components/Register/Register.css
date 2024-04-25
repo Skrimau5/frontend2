@@ -1,0 +1,91 @@
+.wrappers {
+    width: 900px;
+    background: #0040ff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.input-boxs {
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-boxs input {
+    width: 90%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #fff;
+    ;
+    border-radius: 25px;
+    /* Reducir el radio del borde para que se vea más elegante */
+    font-size: 16px;
+    color: #fff;
+    /* Color del texto */
+    padding: 0 20px;
+    /* Ajustar el padding */
+}
+
+.input-boxs input::placeholder {
+    color: #ccc;
+    /* Color de la sugerencia de texto */
+}
+
+.wrappers .button {
+    width: 100%;
+    height: 50px;
+    /* Ajustar la altura del botón */
+    background: #fff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #00011f;
+    font-weight: 700;
+    margin-top: 20px;
+    /* Añadir un espacio entre el botón y los campos de entrada */
+}
+
+.wrappers .button:hover {
+    background: #000bb0;
+    color: #fff;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.register-link {
+    font-size: 14px;
+    /* Ajustar el tamaño de la fuente */
+    text-align: center;
+    margin-top: 15px;
+    /* Añadir espacio arriba */
+}
+
+.error-message {
+    color: #ff6347;
+    /* Cambiar el color del mensaje de error */
+    text-align: center;
+    margin-bottom: 20px;
+    /* Añadir espacio abajo */
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -40px;
+}
+
+.input-box {
+    flex: 1;
+    margin-right: 20px;
+}

@@ -1,0 +1,35 @@
+.child-list-containe {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.kid-button-del{
+  background-color: #ff4d4d; /* Color de fondo rojo */
+  color: #fff; /* Color de texto blanco */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.kid-button-del:hover {
+  background-color: #cc0000; /* Cambio de color al pasar el cursor */
+}
+.kid-button-upd{
+  background-color: #288d7c; /* Color de fondo rojo */
+  color: #fff; /* Color de texto blanco */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.kid-button-upd:hover {
+  background-color: #00ffd5; /* Cambio de color al pasar el cursor */
+}
