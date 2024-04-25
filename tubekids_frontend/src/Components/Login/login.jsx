@@ -27,10 +27,10 @@ const Login = () => {
         console.error(error);
       });
     };
-  
+  //varianble control
   const [error, setError] = useState('');
   const [loggedIn, setLoggedIn] = useState(false);
-
+    //obtener datos form
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -38,7 +38,7 @@ const Login = () => {
       [name]: value
     }));
   };
-
+  //enviar sms
   const sendSMS = async (to) => {
     try {
       const response = await fetch('http://localhost:3001/api/send-sms', {
@@ -57,7 +57,7 @@ const Login = () => {
       console.error('Error al enviar el correo electrónico:', error);
     }
   };
-
+ //logiar
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -79,14 +79,14 @@ const Login = () => {
       setError('');
       localStorage.setItem("Key", key);
       
-// sendSMS(data.telefono);
+      sendSMS(data.telefono);
       setLoggedIn(true);
     } catch (error) {
       console.error('Error logging in:', error);
       setError('Error logging in. Please try again.');
     }
   };
-
+  //generar key
   useEffect(() => {
     fetch('http://localhost:3001/api/key/')
       .then(response => response.json())

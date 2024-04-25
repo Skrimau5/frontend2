@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import './Register.css'
 
+//modelo en vacio
 const Register = () => {
   const[to,setTo]=useState("");
   const [formData, setFormData] = useState({
@@ -16,9 +17,11 @@ const Register = () => {
     telefono: "+50662421563",
     status: 'Inactivo'
   });
+  //contolar movimiento a componentes
   const [loggedIn, setLoggedIn] = useState(false);
   const [error, setError] = useState('');
-
+  
+  //obtener datos formulario
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -27,6 +30,7 @@ const Register = () => {
     }));
   };
 
+  //enviar correo
   const sendEmailTo = async (to) => {
     try {
       const response = await fetch('http://localhost:3001/api/send-email', {
@@ -44,6 +48,7 @@ const Register = () => {
       console.error('Error al enviar el correo electrónico:', error);
     }
   };
+  //guardar usuario
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.password !== formData.repeatPassword) {
@@ -68,6 +73,7 @@ const Register = () => {
       if (!response.ok) {
         throw new Error('Error creating user');
       }
+      //---save data, local storage, reset variables
       const data = await response.json();
       console.log(formData);
       console.log('User registered successfully:', data);
@@ -95,6 +101,7 @@ const Register = () => {
       setError('Error registering user. Please try again later.');
     }
   };
+  //espera
   if (loggedIn) {
     sendEmailTo(to);
     return <Navigate to="/prelogin" />;

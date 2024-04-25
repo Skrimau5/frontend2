@@ -34,7 +34,7 @@ const Home = () => {
       console.log('Child logged in successfully:', data);
 
       closeModal();
-
+        //login
       if (adminKids==="Kid") {
         setLoggedForKids(true);
       } 
@@ -69,7 +69,6 @@ const Home = () => {
         <div class="animation start-home"></div>
       </nav>
 
-        
       {showModal && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-contents" onClick={(e) => e.stopPropagation()}>

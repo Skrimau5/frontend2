@@ -8,7 +8,7 @@ const WatchVideos = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://localhost:3001/api/videos?id=${localStorage.getItem("IdView")}`);
+            const response = await fetch(`http://localhost:3001/api/videos?id=${localStorage.getItem("IdView")}`);//Buscar video por coleccion
             if (!response.ok) {
                 throw new Error('Error fetching videos');
             }

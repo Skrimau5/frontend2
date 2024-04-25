@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Navigate } from 'react-router-dom';
-// import ReactPlayer from 'react-player';
-// import Nav from '../Navs/NavKids/NavKids';
-
 
 const Watch = () => {
 
-  const [data, setData] = useState(null);
+  const [data, setData] = useState(null);//colecciones
   const [loading, setLoading] = useState(true);
   const [view, setView] = useState(false);
   const [error, setError] = useState(null);
@@ -72,22 +69,3 @@ const Watch = () => {
 }
 
 export default Watch
-// return (
-//   <div>
-//     <Nav></Nav>
-//     <ul>
-//       {videos.map(video => (
-//         <li key={video._id}>
-//           <p>Name: {video.name}</p>
-//           <div>
-//             <ReactPlayer
-//               url={video.url}
-//               loop
-//               controls
-//             />
-//           </div>
-//         </li>
-//       ))}
-//     </ul>
-//   </div>
-// )
