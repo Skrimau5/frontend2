@@ -1,28 +1,24 @@
+/* Login.css */
+
 /* Estilos para el contenedor principal */
 .wrapper {
-  width: 100%;
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para el título */
 h1 {
-  text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
 
-/* Estilos para los mensajes de error */
-.error-message {
-  color: #ff0000;
-  margin-bottom: 10px;
-}
-
-/* Estilos para las cajas de entrada */
+/* Estilos para los campos de entrada */
 .input-box {
   margin-bottom: 20px;
 }
@@ -31,7 +27,7 @@ h1 {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 /* Estilos para el botón de enviar */
@@ -41,23 +37,33 @@ h1 {
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
   background-color: #0056b3;
 }
 
-/* Estilos para el enlace */
-.link {
-  text-align: center;
+/* Estilos para el enlace de registro */
+.buttonh {
   display: block;
-  margin-top: 20px;
-  color: #007bff;
+  margin-top: 10px;
+  text-align: center;
   text-decoration: none;
+  color: #007bff;
 }
 
-.link:hover {
+.buttonh:hover {
   text-decoration: underline;
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffcccc;
+  color: #c00;
+  border-radius: 4px;
 }

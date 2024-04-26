@@ -1,57 +1,73 @@
+/* Register.css */
+
+/* Estilos para el contenedor principal */
 .wrappers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.register-form {
-  width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para el título */
 .register-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
+}
+
+/* Estilos para los campos de entrada */
+.input-row {
   margin-bottom: 20px;
 }
 
-.input-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
 .input-box {
-  flex: 1;
+  margin-bottom: 10px;
 }
 
 .register-input {
-  width: 100%;
+  width: calc(50% - 10px);
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+  border-radius: 4px;
 }
 
+/* Estilos para el botón de enviar */
 .button {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
   background-color: #0056b3;
 }
 
-.error-message {
+/* Estilos para el enlace de inicio de sesión */
+.buttonh {
+  display: block;
   margin-top: 10px;
-  color: red;
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.buttonh:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffcccc;
+  color: #c00;
+  border-radius: 4px;
 }
