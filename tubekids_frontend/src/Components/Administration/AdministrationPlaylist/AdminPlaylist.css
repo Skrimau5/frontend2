@@ -1,77 +1,79 @@
-/* Estilos mejorados para el componente AdministrationPlaylist */
+/* Estilos para el contenedor principal */
 .playlist-container {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-}
-
-.playlist-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.playlist-button {
-    margin-bottom: 15px;
+  }
+  
+  /* Estilos para los botones */
+  .buttonh {
+    display: inline-block;
+    margin: 10px;
     padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
     background-color: #007bff;
     color: #fff;
-    cursor: pointer;
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
-}
-
-.playlist-button:hover {
-    background-color: #0056b3;
-}
-
-.error-message {
-    color: red;
-    margin-bottom: 15px;
-}
-
-.playlist-list {
-    list-style: none;
-    padding: 0;
-}
-
-.playlist-item {
+  }
+  
+  /* Estilos para el título */
+  .playlist-title {
+    font-size: 24px;
     margin-bottom: 20px;
-}
-
-.video-name {
+  }
+  
+  /* Estilos para el mensaje de error */
+  .error-message {
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la lista de videos */
+  .playlist-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada elemento de la lista de videos */
+  .playlist-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el nombre del video */
+  .video-name {
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.video-player {
+  }
+  
+  /* Estilos para el reproductor de video */
+  .video-player {
     margin-bottom: 10px;
-}
-
-.video-controls {
-    margin-bottom: 10px;
-}
-
-.video-delete,
-.video-edit {
-    margin-right: 10px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
+  }
+  
+  /* Estilos para los controles del video */
+  .video-controls {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Estilos para los botones de eliminar y editar */
+  .video-delete,
+  .video-edit {
+    margin-left: 10px;
+    padding: 8px 16px;
     background-color: #dc3545;
     color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.video-edit {
-    background-color: #ffc107;
-}
-
-.video-delete:hover,
-.video-edit:hover {
-    background-color: #c82333;
-}
-
-.video-edit:hover {
-    background-color: #e0a800;
-}
+  }
+  
+  .video-edit {
+    background-color: #007bff;
+  }
+  

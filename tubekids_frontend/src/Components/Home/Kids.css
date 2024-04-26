@@ -1,115 +1,98 @@
+/* Estilos para el contenedor principal */
 .child-list-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 14%;
-}
-
-.child-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
+/* Estilos para la tarjeta de cada niño */
 .child-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 10px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background: radial-gradient(circle, #1ea9ff, #c735ff);
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.child-card:hover {
+  transform: translateY(-5px);
+}
 
+/* Estilos para la imagen del avatar */
 .child-avatar {
   width: 100px;
   height: 100px;
+  object-fit: cover;
   border-radius: 50%;
-  cursor: pointer;
+  margin-bottom: 10px;
 }
 
+/* Estilos para los detalles del niño */
 .child-details {
   text-align: center;
 }
 
-
-
-.child-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #fffefe;
-  /* Color de texto oscuro */
-}
-
+.child-name,
 .child-age {
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  /* Color de texto gris */
+  margin: 5px 0;
 }
+
+/* Estilos para el modal */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modal-contents {
-  background-color: #9fa6eb;
-  border-radius: 10px;
+  background-color: #fff;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.close {
-  background: rgb(8, 8, 109);
-  border: white;
-  cursor: pointer;
-  font-size: 16px;
-  color: #fffbfb;
-  padding: 5px;
   border-radius: 5px;
 }
 
 .modal-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
+.close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-input {
-  width: 30%;
+/* Estilos para el formulario en el modal */
+input[type="text"] {
+  width: calc(100% - 100px);
   padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
+/* Estilos para el botón de enviar en el modal */
 .login-button {
-  width: 20%;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
-  border: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  margin-left: 60px;
 }
 
 .login-button:hover {

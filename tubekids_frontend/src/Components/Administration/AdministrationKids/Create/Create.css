@@ -1,68 +1,96 @@
-/* Estilos mejorados para el componente Create */
+/* Estilos para el contenedor principal */
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para el título */
 .create-title {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
+/* Estilos para el formulario */
 .create-form {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+/* Estilos para los inputs */
+.create-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón de selección de avatar */
+.create-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilos para el avatar seleccionado */
+.create-avatar {
+  max-width: 100px;
+  margin-top: 10px;
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.h2{
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.wrappers .buttonss {
-  width: 100%;
-  height: 50px;
-  /* Ajustar la altura del botón */
-  background: #fff;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  font-size: 16px;
-  color: #00011f;
-  font-weight: 700;
-  margin-top: 20px;
-  /* Añadir un espacio entre el botón y los campos de entrada */
-}
-
-.wrappers .buttonss:hover {
-  background: #000bb0;
-  color: #fff;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
-}
-
-.create-input,
-.create-button {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.create-avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-
-
 .modal-content {
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Estilos para los botones del modal */
+.buttonss {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+}
+
+/* Estilos para las imágenes */
+.create-avatar {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
 }

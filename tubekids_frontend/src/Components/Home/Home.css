@@ -1,3 +1,51 @@
+/* Estilos para el contenedor principal */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+/* Estilos para los botones */
+.buttonh {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para la animación */
+.animation {
+  width: 150px;
+  height: 150px;
+  background: url('https://media.giphy.com/media/9x8Or8eyID6Ww/giphy.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-home {
+  animation: animationHome 5s infinite;
+}
+
+@keyframes animationHome {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 /* Estilos para el modal */
 .modal-overlay {
   position: fixed;
@@ -5,64 +53,52 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal-content {
-  background-color: white;
+.modal-contents {
+  background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 5px;
 }
 
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.close {
+  background-color: transparent;
   border: none;
   cursor: pointer;
   font-size: 16px;
-  color: #333;
 }
 
-.close-button:hover {
-  color: #000;
+/* Estilos para el formulario en el modal */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-/* Estilos para los botones */
-.buttonh {
-  margin: 10px 10px 0 0; /* Añade espacio entre los botones */
+/* Estilos para el botón de enviar en el modal */
+.login-button {
   padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
   background-color: #007bff;
   color: #fff;
-  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.buttonh:hover {
+.login-button:hover {
   background-color: #0056b3;
 }
-
-/* Estilos para el contenedor principal */
-.container {
-  margin-left: 20px; /* Añade margen izquierdo a partir del borde de la pantalla */
-}
-
-
-/* Estilos para los botones de administración */
-.admin-button {
-  background-color: #28a745; /* Verde */
-}
-
-.admin-button:hover {
-  background-color: #218838;
-}
-
-

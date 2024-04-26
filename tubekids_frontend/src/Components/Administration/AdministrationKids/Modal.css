@@ -1,35 +1,77 @@
-.child-list-containe {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-.kid-button-del{
-  background-color: #ff4d4d; /* Color de fondo rojo */
-  color: #fff; /* Color de texto blanco */
+/* Estilos para los botones */
+.buttonh {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 8px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
-.kid-button-del:hover {
-  background-color: #cc0000; /* Cambio de color al pasar el cursor */
+/* Estilos para el contenedor principal */
+.child-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
-.kid-button-upd{
-  background-color: #288d7c; /* Color de fondo rojo */
-  color: #fff; /* Color de texto blanco */
+
+/* Estilos para el título */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de los niños */
+.child-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Estilos para la tarjeta de cada niño */
+.child-card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la imagen del avatar */
+.child-avatar {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/* Estilos para los detalles del niño */
+.child-details {
+  margin-top: 10px;
+}
+
+/* Estilos para el nombre del niño */
+.child-name {
+  font-weight: bold;
+}
+
+/* Estilos para la edad del niño */
+.child-age {
+  color: #777;
+}
+
+/* Estilos para los botones de eliminar y editar */
+.kid-button-del,
+.kid-button-upd {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 8px 16px;
-  margin-top: 5px;
-  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.kid-button-upd:hover {
-  background-color: #00ffd5; /* Cambio de color al pasar el cursor */
+.kid-button-upd {
+  background-color: #007bff;
+  margin-left: 10px;
 }
