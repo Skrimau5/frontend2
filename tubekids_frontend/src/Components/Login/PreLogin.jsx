@@ -2,7 +2,7 @@ import React from 'react'
 
 const PreLogin = () => {
   return (
-    <div>En breve le llegará un correo con un link de verificación. Muchas gracias.</div>
+    <div>Favor Revisar su correo Electronico para ver el Link</div>
   )
 }
 

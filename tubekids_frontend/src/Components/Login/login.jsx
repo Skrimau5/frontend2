@@ -79,7 +79,7 @@ const Login = () => {
       setError('');
       localStorage.setItem("Key", key);
       
-      sendSMS(data.telefono);
+      //sendSMS(data.telefono);
       setLoggedIn(true);
     } catch (error) {
       console.error('Error logging in:', error);
